@@ -1,0 +1,25 @@
+.skills {
+    text-align: left;
+    padding: 75px;
+}
+
+.skills__heading {
+    font-weight: 800;
+    font-size: 49px;
+    line-height: 74px;
+    color: #5E3AEE;
+    margin: 0 0 57px 0;
+}
+
+.skills__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style-type: none;
+    gap: 38px 100px;
+}
+
+.skills__skill {
+    font-size: 24px;
+    line-height: 36px;
+}
+

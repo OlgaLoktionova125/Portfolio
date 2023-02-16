@@ -1,0 +1,41 @@
+.aboutMe {
+    background-color: #0F1221;
+    display: flex;
+    justify-content: space-between;
+    padding: 75px;      
+}
+
+.aboutMe__content {
+    max-width: 750px;
+    text-align: left;
+    color: #fff;
+}
+
+.aboutMe__heading {
+    font-weight: 700;
+    font-size: 49px;
+    line-height: 74px;
+    margin: 0 0 13px 0;
+}
+
+.aboutMe__text {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    margin: 0 0 10px 0;
+}
+
+.aboutMe__text:last-child {
+    margin-bottom: 0;
+}
+
+.aboutMe__image {
+    width: 350px;
+    height: 350px;
+    filter: drop-shadow(0 0 3px #5E3AEE);
+}
+
+.aboutMe__link {
+    text-decoration: none;
+    color: #5E3AEE;
+}
