@@ -16,11 +16,7 @@
     font-size: 19px;
     line-height: 50px;
     color: #000;
-    transition: color 0.3s linear;
-}
-
-.navigation__link:hover {
-    color: #696969;
+    transition: color 0.2s linear;
 }
 
 .navigation__link_active {

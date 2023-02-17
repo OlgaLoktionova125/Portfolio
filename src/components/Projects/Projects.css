@@ -1,8 +1,5 @@
 .projects {
-    margin: 50px 75px;
-    padding: 50px 0;
-    border-top: 3px solid #F0F0F5;
-    border-bottom: 3px solid #F0F0F5;
+    padding: 50px 0;     
 }
 
 .projects__heading {

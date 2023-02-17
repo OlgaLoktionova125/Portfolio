@@ -13,19 +13,19 @@ const Contacts = forwardRef((props, ref) => {
                 <h2 className='contacts__heading'>Контакты</h2>
                 <ul className='contacts__list'>
                     <li className='contacts__item'>
-                        <a className='contacts__link' href='https://wa.me/79032518439' >
+                        <a className='contacts__link' href='https://wa.me/79032518439' target='_blank' rel='noreferrer'>
                             <img className='contacts__image' src={whatsapp} alt='иконка вотсапп'></img>
                             <p className='contacts__text'>WhatsApp</p> 
                         </a>
                     </li>
                     <li className='contacts__item'>
-                        <a className='contacts__link' href='https://t.me/Olga_222243' >
+                        <a className='contacts__link' href='https://t.me/Olga_222243' target='_blank' rel='noreferrer'>
                             <img className='contacts__image' src={telegram} alt='иконка телеграм'></img>
                             <p className='contacts__text'>Telegram</p>
                         </a>
                     </li>
                     <li className='contacts__item'>
-                        <a className='contacts__link' href='mailto:olgaloktionova@yandex.ru' >
+                        <a className='contacts__link' href='mailto:olgaloktionova@yandex.ru' target='_blank' rel='noreferrer'>
                             <img className='contacts__image' src={mail} alt='иконка электронной почты'></img>
                             <p className='contacts__text'>Эл. почта</p>
                         </a>
