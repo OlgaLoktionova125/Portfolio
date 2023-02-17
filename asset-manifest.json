@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.9fe6753c.css",
-    "main.js": "/static/js/main.ced78c04.js",
-    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
-    "static/media/russian-travel.png": "/static/media/russian-travel.7cc7b83463a58fbe8d62.png",
-    "static/media/how-to-learn.png": "/static/media/how-to-learn.1e781d8fbdc7316473f9.png",
-    "static/media/movies-explorer.png": "/static/media/movies-explorer.100aaf886fd54a21b55d.png",
-    "static/media/mesto.png": "/static/media/mesto.d430d53cbb3d3f2a21d2.png",
-    "static/media/mesto-react.png": "/static/media/mesto-react.6410129c27c2bb124607.png",
-    "static/media/photo.jpg": "/static/media/photo.a61020709551c5613fbd.jpg",
-    "static/media/laptop.png": "/static/media/laptop.84bfb5a33b323a294140.png",
-    "static/media/contacts.png": "/static/media/contacts.a04c90b40b73c045e2dd.png",
-    "static/media/mail.svg": "/static/media/mail.999c073674ac36f783e50f9bfd3ae6ba.svg",
-    "index.html": "/index.html",
-    "static/media/whatsapp.svg": "/static/media/whatsapp.47ab0b6ea744188c0e9a863bd4b5cda3.svg",
-    "static/media/telegram.svg": "/static/media/telegram.289e4707e30ed55accbfdb1855e6ff26.svg",
-    "main.9fe6753c.css.map": "/static/css/main.9fe6753c.css.map",
-    "main.ced78c04.js.map": "/static/js/main.ced78c04.js.map",
-    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+    "main.css": "/Portfolio/static/css/main.9fe6753c.css",
+    "main.js": "/Portfolio/static/js/main.13fc08b4.js",
+    "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/russian-travel.png": "/Portfolio/static/media/russian-travel.7cc7b83463a58fbe8d62.png",
+    "static/media/how-to-learn.png": "/Portfolio/static/media/how-to-learn.1e781d8fbdc7316473f9.png",
+    "static/media/movies-explorer.png": "/Portfolio/static/media/movies-explorer.100aaf886fd54a21b55d.png",
+    "static/media/mesto.png": "/Portfolio/static/media/mesto.d430d53cbb3d3f2a21d2.png",
+    "static/media/mesto-react.png": "/Portfolio/static/media/mesto-react.6410129c27c2bb124607.png",
+    "static/media/photo.jpg": "/Portfolio/static/media/photo.a61020709551c5613fbd.jpg",
+    "static/media/laptop.png": "/Portfolio/static/media/laptop.84bfb5a33b323a294140.png",
+    "static/media/contacts.png": "/Portfolio/static/media/contacts.a04c90b40b73c045e2dd.png",
+    "static/media/mail.svg": "/Portfolio/static/media/mail.999c073674ac36f783e50f9bfd3ae6ba.svg",
+    "index.html": "/Portfolio/index.html",
+    "static/media/whatsapp.svg": "/Portfolio/static/media/whatsapp.47ab0b6ea744188c0e9a863bd4b5cda3.svg",
+    "static/media/telegram.svg": "/Portfolio/static/media/telegram.289e4707e30ed55accbfdb1855e6ff26.svg",
+    "main.9fe6753c.css.map": "/Portfolio/static/css/main.9fe6753c.css.map",
+    "main.13fc08b4.js.map": "/Portfolio/static/js/main.13fc08b4.js.map",
+    "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9fe6753c.css",
-    "static/js/main.ced78c04.js"
+    "static/js/main.13fc08b4.js"
   ]
 }
