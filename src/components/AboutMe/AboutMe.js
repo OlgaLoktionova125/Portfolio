@@ -9,7 +9,7 @@ const AboutMe = forwardRef((props, ref) => {
                 <h2 className='aboutMe__heading'>Немного о себе...</h2>
                 <p className='aboutMe__text'>Меня зовут Локтионова Ольга. Я начинающий фронтенд-разработчик.
                                              Недавно я окончила курсы по "веб-разработке" и сделала, в процессе обучения,
-                                             несколько проектов. Подробнее с ними можете ознакомиться на моей странице в &nbsp; 
+                                             несколько проектов. Подробнее с ними можете ознакомиться на &nbsp; 
                                              <a href='https://github.com/OlgaLoktionova125' target='_blank' rel='noreferrer' className='aboutMe__link'>  
                                              GitHub.
                                              </a>

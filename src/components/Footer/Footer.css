@@ -9,3 +9,18 @@
     color: #696969;
     margin: 0;
 }
+
+@media (max-width: 1279px) {
+    .footer__text {
+        font-size: 23px;
+        line-height: 32px;
+    }
+}
+
+@media (max-width: 767px) {
+    
+    .footer__text {
+        font-size: 14px;
+        line-height: 21px;
+    }
+}

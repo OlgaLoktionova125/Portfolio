@@ -59,11 +59,64 @@
 }
 
 .promo__image {
-    /* width: 434px;
-    height: 408px;
-    margin-top: 60px; */
     width: 230px;
     height: 230px;
     border-radius: 50%;
     filter: drop-shadow(0 0 10px #5E3AEE);
+}
+
+@media (max-width: 1279px) {
+    .promo {
+        padding: 50px 0;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 48px;
+    }
+
+    .promo__content {
+        max-width: 400px;
+        text-align: center;
+    }
+
+    .promo__hello {
+        font-size: 40px;
+        line-height: 50px;        
+    }
+
+    .promo__frontDev {
+        font-size: 23px;
+        line-height: 32px;
+        margin-bottom: 0;
+    }
+
+    .promo__button {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .promo {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .promo__content {
+        max-width: 200px;
+    }
+
+    .promo__hello {
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    .promo__frontDev {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .promo__image {
+        width: 150px;
+        height: 150px;
+    }
 }

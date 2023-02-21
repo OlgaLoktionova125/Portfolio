@@ -10,49 +10,56 @@ import './App.css';
 
 function App() {
 
-    const [isMainActive, setIsMainActive] = useState(false);
-    const [isProjectsActive, setIsProjectActive] = useState(false);
-    const [isAboutMeActive, setIsAboutMeActive] = useState(false);
-    const [isContactsActive, setIsContactsActive] = useState(false);
+  const [isMainActive, setIsMainActive] = useState(false);
+  const [isProjectsActive, setIsProjectActive] = useState(false);
+  const [isAboutMeActive, setIsAboutMeActive] = useState(false);
+  const [isContactsActive, setIsContactsActive] = useState(false);
 
-    const mainRef = createRef();
-    const projectsRef = createRef();
-    const aboutMeRef = createRef();
-    const contactsRef = createRef();
-    
-    useEffect(() => {
+  const mainRef = createRef();
+  const projectsRef = createRef();
+  const aboutMeRef = createRef();
+  const contactsRef = createRef();
+
+  const screen = window.innerWidth;
+  
+  useEffect(() => {
+    if (screen > 1279){
       const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entrie) => {
-          if (entrie.target.id === 'promo' && entrie.isIntersecting) {
-            setIsMainActive(true);
-            setIsProjectActive(false);
-            setIsAboutMeActive(false);
-            setIsContactsActive(false);
-          } else if(entrie.target.id === 'projects' && entrie.isIntersecting) {
-            setIsMainActive(false);
-            setIsProjectActive(true);
-            setIsAboutMeActive(false);
-            setIsContactsActive(false);
-          } else if(entrie.target.id === 'aboutMe' && entrie.isIntersecting) {
-            setIsMainActive(false);
-            setIsProjectActive(false);
-            setIsAboutMeActive(true);
-            setIsContactsActive(false);
-          } else if(entrie.target.id === 'contacts' && entrie.isIntersecting) {
-            setIsMainActive(false);
-            setIsProjectActive(false);
-            setIsAboutMeActive(false);
-            setIsContactsActive(true);
-          }
-        })
-      }, {
-        threshold: 0.7
-      });
+      entries.forEach((entrie) => {
+        if (entrie.target.id === 'promo' && entrie.isIntersecting) {
+          setIsMainActive(true);
+          setIsProjectActive(false);
+          setIsAboutMeActive(false);
+          setIsContactsActive(false);
+        } else if(entrie.target.id === 'projects' && entrie.isIntersecting) {
+          setIsMainActive(false);
+          setIsProjectActive(true);
+          setIsAboutMeActive(false);
+          setIsContactsActive(false);
+        } else if(entrie.target.id === 'aboutMe' && entrie.isIntersecting) {
+          setIsMainActive(false);
+          setIsProjectActive(false);
+          setIsAboutMeActive(true);
+          setIsContactsActive(false);
+        } else if(entrie.target.id === 'contacts' && entrie.isIntersecting) {
+          setIsMainActive(false);
+          setIsProjectActive(false);
+          setIsAboutMeActive(false);
+          setIsContactsActive(true);
+        }
+      })
+    }, {
+      threshold: 0.7
+    });
       observer.observe(mainRef.current);
       observer.observe(projectsRef.current);
       observer.observe(aboutMeRef.current);
       observer.observe(contactsRef.current);
-    },[aboutMeRef, contactsRef, mainRef, projectsRef]);
+      return () => observer.disconnect();
+    }      
+  },[aboutMeRef, contactsRef, mainRef, projectsRef, screen]);
+
+  
 
   return (
     <div className='app'>
@@ -60,7 +67,7 @@ function App() {
         <Header isMainActive={isMainActive} isProjectsActive={isProjectsActive} isAboutMeActive={isAboutMeActive} isContactsActive={isContactsActive}/>
         <main>
           <Promo ref={mainRef}/>
-          <Projects ref={projectsRef}/>
+          <Projects ref={projectsRef} screen={screen}/>
           <AboutMe ref={aboutMeRef}/>
           <Skills />
           <Contacts ref={contactsRef}/>
