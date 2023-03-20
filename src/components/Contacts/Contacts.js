@@ -1,4 +1,4 @@
-import './Contacts.css';
+import './Contacts.scss';
 import contacts from '../../images/contacts.png';
 import whatsapp from '../../images/whatsapp.svg';
 import telegram from '../../images/telegram.svg';

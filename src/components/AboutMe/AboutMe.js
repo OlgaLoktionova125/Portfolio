@@ -1,4 +1,4 @@
-import './AboutMe.css';
+import './AboutMe.scss';
 import laptop from '../../images/laptop.png'
 import { forwardRef } from 'react';
 

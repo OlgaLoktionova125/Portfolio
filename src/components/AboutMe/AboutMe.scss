@@ -1,0 +1,44 @@
+@import '../../scss/mixins.scss';
+
+.aboutMe {
+    @include section-padding;
+    background-color: #0F1221;
+    display: flex;
+    justify-content: space-between;
+
+    &__content {
+        max-width: 750px;
+        text-align: left;
+        color: #fff;
+        @media (max-width: 1279px) {
+            max-width: 100%;
+        }
+    }
+
+    &__heading {
+        @include heading;
+        margin:0 0 30px 0;
+    }
+
+    &__text {
+        @include text;
+        margin: 0 0 10px 0;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__image {
+        width: 350px;
+        height: 350px;
+        filter: drop-shadow(0 0 3px #5E3AEE);
+        @media (max-width: 1279px) {
+            display: none;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: #5E3AEE;
+    }
+}

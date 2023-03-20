@@ -1,0 +1,30 @@
+@import '../../scss/mixins.scss';
+
+.skills {
+    @include section-padding;
+    text-align: left;
+
+    &__heading {
+        @include heading;
+        color: #5E3AEE;
+        margin: 0  0 30px 0;
+    }
+
+    &__list {
+        @include list-style;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 38px 100px;
+        @media (max-width: 1279px) {
+            gap: 30px 50px;
+        }
+        @media (max-width: 767px) {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px 30px;
+        }
+    }
+
+    &__skill {
+        @include text;
+    }
+}

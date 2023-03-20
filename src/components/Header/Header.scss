@@ -1,15 +1,14 @@
+@import '../../scss/variables.scss';
+
 .header {
     padding: 5px 75px 5px 75px;
     position: sticky;
     top: 0;
     left: 0;
-    background-color: #fff;
     z-index: 100;
     border-bottom: 3px solid #F0F0F5;
-}
-
-@media (max-width: 1279px) {
-    .header {
+    background-color: $background-color;
+    @media (max-width: 1279px) {
         position: relative;
     }
 }

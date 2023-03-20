@@ -1,4 +1,3 @@
-import howToLearn  from '../images/how-to-learn.png';
 import russianTravel from '../images/russian-travel.png';
 import mesto from '../images/mesto.png';
 import mestoReact from '../images/mesto-react.png';
@@ -6,12 +5,6 @@ import moviesExplorer from '../images/movies-explorer.png';
 
 export const projects = [
 
-    {
-        name: 'Научиться учиться',
-        image: howToLearn,
-        link: 'https://olgaloktionova125.github.io/how-to-learn/index.html',
-        description: 'Одностраничный статичный сайт о современных и эффективных подходах к обучению'
-    },
     {   
         name: 'Путешествия по России',
         image: russianTravel,

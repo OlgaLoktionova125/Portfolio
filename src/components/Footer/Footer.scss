@@ -1,0 +1,12 @@
+@import '../../scss/mixins.scss';
+
+.footer {
+    padding: 15px 75px;
+    text-align:  center;
+
+    &__text {
+        @include text;
+        color: #696969;
+        margin: 0;
+    }
+}

@@ -1,0 +1,100 @@
+@import '../../scss/mixins.scss';
+
+.projects {
+    @include section-padding;
+
+    &__heading {
+        @include heading;
+        color: #5E3AEE;
+        margin:0 0 30px 0;
+        text-align: center;
+    }
+
+    &__slider {
+        display: block;
+        @media (max-width: 1279px) {
+            display: none;
+        }
+    }
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    &__image {
+        width: 800px;
+        height: 500px;
+        object-fit: contain;
+        @media (max-width: 1279px) {
+            width: 20px;
+            height: 20px;
+        }
+        @media (max-width: 767px) {
+            width: 10px;
+            height: 10px;
+        }
+    }
+
+    &__button {
+        background-color: transparent;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 25px 25px 25px 25px;
+        filter: drop-shadow(0 0 3px #000);
+        transition: filter 0.5s linear;
+        &_mousedown {
+            filter: drop-shadow(0 0 0);
+        }
+        &_left {
+            border-color: transparent #F0F0F5 transparent transparent;
+        }
+        &_right {
+            border-color: transparent transparent transparent #F0F0F5;
+        }
+    }
+
+    &__description {
+        font-size: 19px;
+        line-height: 28px;
+        margin: 10px 0 0 0;
+        text-align: center;
+    }
+
+    &__list {
+        display: none;
+        @media (max-width: 1279px) {
+            display: block;
+            @include list-style;
+            text-align: left;
+        }        
+    }
+
+    &__item {
+        border-bottom: 2px solid #F0F0F5;
+    }
+    
+    &__link {
+        @include text;
+        text-decoration: none;
+        color: #696969;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding-left: 50px;
+        padding-right: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width: 767px) {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+    }
+
+    &__text {
+        margin: 0;
+    }    
+}

@@ -1,5 +1,5 @@
 import Navigation from '../Navigation/Navigation';
-import './Header.css';
+import './Header.scss';
 
 function Header({isMainActive, isProjectsActive, isAboutMeActive, isContactsActive}) {
     return(

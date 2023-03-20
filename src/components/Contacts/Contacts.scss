@@ -1,0 +1,58 @@
+@import '../../scss/mixins.scss';
+
+.contacts {
+    @include section-padding;
+    background-color: #5E3AEE;
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+
+    &__heading {
+        @include heading;
+        color: #fff;
+        @media (max-width: 767px) {
+            margin: 0 0 30px 0;
+        }
+    }
+
+    &__list {
+        @include list-style;
+    }
+
+    &__link {
+        display: flex;
+        justify-content: flex-start;
+        gap: 30px;
+        align-items: center;
+        text-decoration: none;
+        transition: opacity 0.3s linear;
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    &__text {
+        @include text;
+        color: #fff;
+    }
+
+    &__icon {
+        width: 75px;
+        height: 75px;
+        @media (max-width: 1279px) {
+            width: 65px;
+            height: 65px;
+        }
+        @media (max-width: 767px) {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    &__image {
+        @media (max-width: 1279px) {
+            width: 50%;
+            object-fit: contain;
+        }
+    }
+}

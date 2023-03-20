@@ -1,0 +1,14 @@
+@import '../../scss/variables.scss';
+
+.app {
+    background-color: $background-color;
+
+    & {
+        max-width: 1280px;  
+        min-width: 320px;
+        font-family: $font-family;
+        margin: auto;
+        min-height: 100vh;
+        text-rendering: optimizeLegibility;
+    }
+}

@@ -1,4 +1,4 @@
-import './Promo.css';
+import './Promo.scss';
 import photo from '../../images/photo.jpg';
 import { forwardRef } from 'react';
 

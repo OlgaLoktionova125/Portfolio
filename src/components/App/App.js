@@ -6,7 +6,7 @@ import Header from '../Header/Header';
 import Projects from '../Projects/Projects';
 import Promo from '../Promo/Promo';
 import Skills from '../Skills/Skills';
-import './App.css';
+import './App.scss';
 
 function App() {
 

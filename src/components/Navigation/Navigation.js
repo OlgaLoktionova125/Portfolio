@@ -1,4 +1,4 @@
-import './Navigation.css';
+import './Navigation.scss';
 import { useState } from 'react';
 
 function Navigation({isMainActive, isProjectsActive, isAboutMeActive, isContactsActive}) {
